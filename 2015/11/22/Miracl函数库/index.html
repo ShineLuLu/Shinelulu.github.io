@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Miracl函数库&amp;Ubuntu下创建C++项目 | 果然爱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Miracl函数库的获取:Miracl函数库获取地址【来自CSDN】
+Miracl函数库简介MIRACL(Multiprecision Integer and RationalArithmetic C/c++ Library)是一套由Shamus Software Ltd.所开发的一套关于大数运算函数库，用来设计与大数运算相关的密码学应用，包含了RSA 公开密码学、Diffie-Hellman">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Miracl函数库&Ubuntu下创建C++项目">
+<meta property="og:url" content="http://yoursite.com/2015/11/22/Miracl函数库/index.html">
+<meta property="og:site_name" content="果然爱">
+<meta property="og:description" content="Miracl函数库的获取:Miracl函数库获取地址【来自CSDN】
+Miracl函数库简介MIRACL(Multiprecision Integer and RationalArithmetic C/c++ Library)是一套由Shamus Software Ltd.所开发的一套关于大数运算函数库，用来设计与大数运算相关的密码学应用，包含了RSA 公开密码学、Diffie-Hellman">
+<meta property="og:updated_time" content="2015-12-08T02:35:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Miracl函数库&Ubuntu下创建C++项目">
+<meta name="twitter:description" content="Miracl函数库的获取:Miracl函数库获取地址【来自CSDN】
+Miracl函数库简介MIRACL(Multiprecision Integer and RationalArithmetic C/c++ Library)是一套由Shamus Software Ltd.所开发的一套关于大数运算函数库，用来设计与大数运算相关的密码学应用，包含了RSA 公开密码学、Diffie-Hellman">
+  
+    <link rel="alternative" href="/atom.xml" title="果然爱" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="iamge/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://avatar.csdn.net/5/6/4/1_shinelulu.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">夏鲁鲁</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Shinelulu" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/11280907" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://my.csdn.net/shinelulu" title="rss">rss</a>
+					        
+								<a class="douban" target="_blank" href="http://douban.fm/" title="douban">douban</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/圣诞节/" style="font-size: 10px;">-圣诞节</a> <a href="/tags/AVISPA/" style="font-size: 10px;">AVISPA</a> <a href="/tags/C-C/" style="font-size: 10px;">C/C++</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Miracl/" style="font-size: 10px;">Miracl</a> <a href="/tags/NS2/" style="font-size: 10px;">NS2</a> <a href="/tags/协同过滤/" style="font-size: 10px;">协同过滤</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/推荐系统/" style="font-size: 10px;">推荐系统</a> <a href="/tags/无线网络/" style="font-size: 20px;">无线网络</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a> <a href="/tags/漫游/" style="font-size: 10px;">漫游</a> <a href="/tags/漫游认证/" style="font-size: 10px;">漫游认证</a> <a href="/tags/然然/" style="font-size: 10px;">然然</a> <a href="/tags/签名认证/" style="font-size: 15px;">签名认证</a> <a href="/tags/网络仿真/" style="font-size: 10px;">网络仿真</a> <a href="/tags/网络安全/" style="font-size: 15px;">网络安全</a> <a href="/tags/美女/" style="font-size: 10px;">美女</a> <a href="/tags/问题与解决方案/" style="font-size: 10px;">问题与解决方案</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://xiaomin.me/">大雄的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">阿姆斯特朗回旋加速喷气式阿姆斯特朗兔</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">夏鲁鲁</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://avatar.csdn.net/5/6/4/1_shinelulu.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">夏鲁鲁</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Shinelulu" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/11280907" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://my.csdn.net/shinelulu" title="rss">rss</a>
+			        
+						<a class="douban" target="_blank" href="http://douban.fm/" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Miracl函数库" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/22/Miracl函数库/" class="article-date">
+  	<time datetime="2015-11-22T11:31:34.000Z" itemprop="datePublished">2015-11-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Miracl函数库&amp;Ubuntu下创建C++项目
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-C/">C/C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Miracl/">Miracl</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<ul>
+<li>Miracl函数库的获取:<a href="http://download.csdn.net/download/naitway/1465907" target="_blank" rel="external">Miracl函数库获取地址</a>【来自CSDN】</li>
+<li>Miracl函数库简介<br>MIRACL(Multiprecision Integer and RationalArithmetic C/c++ Library)是一套由Shamus Software Ltd.所开发的一套关于大数运算函数库，用来设计与大数运算相关的密码学应用，包含了RSA 公开密码学、Diffie-Hellman密钥交换(Key Exchange)、AES、DSA数字签名，还包含了较新的椭圆曲线密码学(Elliptic CurveCryptography)等等。运算速度快，并提供源代码。MIARCL是当前使用比较广泛的基于公钥加密算法保护实现的大数库之一。</li>
+</ul>
+<hr>
+<h2 id="1-Miracl函数库常用函数调用手册"><a href="#1-Miracl函数库常用函数调用手册" class="headerlink" title="1.Miracl函数库常用函数调用手册"></a>1.Miracl函数库常用函数调用手册</h2><ul>
+<li>声明：此处只列出和大数相关的简单运算函数，以及产生大数随机数的函数调用手册，具体请查看<a href="http://www.doc88.com/p-8942910643574.html" target="_blank" rel="external">manual.doc</a>文档。不当之处，请大家批评指正！<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//取x的绝对值 y=|x|  </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">absol</span><span class="params">(big x,big y)</span></span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//两个大数相加 z=x+y  </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(big x,big y,bigz)</span></span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//产生一个n位数的大整数，初始化随机种子由irand函数实现  </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bigbits</span><span class="params">(<span class="keyword">int</span> n,big x)</span></span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将大数字符串转换成大数，返回输入字符数的个数  </span></span><br><span class="line">int cinstr(big <span class="keyword">x</span>,char <span class="keyword">s</span>)  </span><br><span class="line"><span class="comment">//例如：  </span></span><br><span class="line">mip-&gt;IOBASE=<span class="number">16</span><span class="comment">;  </span></span><br><span class="line">cinstr(<span class="keyword">x</span>,<span class="string">"AF12345678065BFE4C96DB723A"</span>)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//比较两个数的大小，x&gt;y返回+1，x=y返回0，x&lt;y返回-1  </span></span><br><span class="line"><span class="keyword">int</span> conpare(big x,big y)</span><br></pre></td></tr></table></figure>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将一个整数n转换成一个大数x  </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">convert</span><span class="params">(<span class="keyword">int</span> n,big x)</span></span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>(待补充……)<h2 id="2-Miracl函数库调用举例"><a href="#2-Miracl函数库调用举例" class="headerlink" title="2.Miracl函数库调用举例"></a>2.Miracl函数库调用举例</h2></li>
+<li>所需文件：数运算静态库文件ms32.lib和头部文件miracl.h和mirdef.h。</li>
+<li><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="string">"C"</span></span><br><span class="line"></span><br><span class="line">　　&#123;</span><br><span class="line"></span><br><span class="line">    　　<span class="meta">#<span class="meta-keyword">include</span> <span class="string">"miracl.h"</span></span></span><br><span class="line"></span><br><span class="line">    　　<span class="meta">#<span class="meta-keyword">include</span> <span class="string">"mirdef.h"</span></span></span><br><span class="line"></span><br><span class="line">　　&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在_tmain函数中插入如下代码，以测试大数运算情况。</p>
+</li>
+<li><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">miracl *mip = mirsys(<span class="number">400</span>,<span class="number">10</span>)<span class="comment">;   //初始化一个400位10进制的大数系统</span></span><br><span class="line">　　<span class="keyword">big </span>x,y,z<span class="comment">;</span></span><br><span class="line">　　x = mirvar(<span class="number">177</span>)<span class="comment">;</span></span><br><span class="line">      y = mirvar(<span class="number">79</span>)<span class="comment">;</span></span><br><span class="line">      z = mirvar(<span class="number">0</span>)<span class="comment">;</span></span><br><span class="line">      <span class="keyword">divide(x, </span>y, z)<span class="comment">;  //x=x mod y, z=x/y</span></span><br><span class="line">      cotnum(x,stdout)<span class="comment">; //x=19</span></span><br><span class="line">      cotnum(y,stdout)<span class="comment">; //y=79</span></span><br><span class="line">      cotnum(z,stdout)<span class="comment">; //z=2</span></span><br><span class="line">      <span class="keyword">multiply(x, </span>y, z)<span class="comment">;   //z=x*y</span></span><br><span class="line">      mip-&gt;IOBASE=<span class="number">16</span><span class="comment">;      //将原来的10进制改为16进制模式</span></span><br><span class="line">      cotnum(z, stdout)<span class="comment">;   //5DD</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试13^-1 mod 2436 = 937</p>
+</li>
+<li><figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = mirvar(<span class="number">13</span>)<span class="comment">;</span></span><br><span class="line">    y = mirvar(<span class="number">2436</span>)<span class="comment">;</span></span><br><span class="line">xgcd(x, y, z, z, z)<span class="comment">;</span></span><br><span class="line">    std::cout&lt;&lt;<span class="string">"z="</span><span class="comment">;</span></span><br><span class="line">    cotnum(z, stdout)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mirkill(<span class="name">x</span>)<span class="comment">;          //释放大数变量</span></span><br><span class="line">    mirkill(<span class="name">y</span>)<span class="comment">;</span></span><br><span class="line">    mirkill(<span class="name">z</span>)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-Ubuntu下创建C-项目"><a href="#3-Ubuntu下创建C-项目" class="headerlink" title="3.Ubuntu下创建C++项目"></a>3.Ubuntu下创建C++项目</h2><ul>
+<li>环境的搭建<br>ubuntu操作系统是没有默认带C++编译器g++的，所以需要现安装g++。 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install g++</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>按回车即可安装C++的编译器g++。</p>
+<ul>
+<li><p>C++工程创建实例</p>
+<ul>
+<li>以创建hello工程为例</li>
+<li><p>在ubuntu系统下使用mkdir命令创建一个hello的目录。 在该目录下创建hello.h,hello.cpp,main.cpp,makefile四个文件<br>-各文件代码</p>
+<ul>
+<li><p>hello.h</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> HELLO_H_</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> HELLO_H_</span></span><br><span class="line"><span class="keyword">class</span> Hello &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="keyword">void</span> <span class="built_in">print</span>();</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>hello.cpp</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> “hello.h”</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">void</span> Hello::print()</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;”Hello, welcome to Redhat Linux os!”&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>main.cpp</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="string">"hello.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">     Hello h;</span><br><span class="line">     h.print();</span><br><span class="line">     <span class="keyword">return</span> <span class="number">0</span>；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>这三个文件要以空白行结束，否则编译会有警告信息。</p>
+<ul>
+<li>makefile文件<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># this is a makefile of the c++ project hello</span></span><br><span class="line"><span class="comment"># the standard c++ compiler in the Redhat linux is g++</span></span><br><span class="line"><span class="comment"># written by young on June 27th, 2009</span></span><br><span class="line">      TARGET = .</span><br><span class="line">          CC = g++</span><br><span class="line">      CFLAGS = -g</span><br><span class="line">      CFLAGC = -c</span><br><span class="line">      </span><br><span class="line">      MAINC = main.cpp</span><br><span class="line">      HELLO = hello.cpp</span><br><span class="line">        OBJ = hello.o</span><br><span class="line">      </span><br><span class="line">      INCLUDE = -I<span class="variable">$(</span>TARGET)</span><br><span class="line">         EXEC = <span class="variable">$(</span>TARGET)/main</span><br><span class="line">      </span><br><span class="line"><span class="symbol">all:</span> <span class="variable">$(</span>EXEC)</span><br><span class="line"><span class="variable">$(</span>EXEC)<span class="symbol">:</span> <span class="variable">$(</span>OBJ) <span class="variable">$(</span>MAINC)</span><br><span class="line"><span class="variable">$(</span>CC) <span class="variable">$(</span>CFLAGS) <span class="variable">$(</span>OBJ) <span class="variable">$(</span>MAINC) <span class="variable">$(</span>INCLUDE) -o <span class="variable">$@</span></span><br><span class="line">rm -f <span class="variable">$(</span>OBJ)</span><br><span class="line"><span class="variable">@echo</span> <span class="string">"&lt;&lt;&lt;&lt;&lt;&lt; $@ is created successfully! &gt;&gt;&gt;&gt;&gt;&gt;"</span></span><br><span class="line"><span class="variable">$(</span>OBJ)<span class="symbol">:</span> <span class="variable">$(</span>HELLO)</span><br><span class="line"><span class="variable">$(</span>CC) <span class="variable">$(</span>CFLAGC) <span class="variable">$(</span>HELLO) -o <span class="variable">$@</span></span><br><span class="line"><span class="symbol">clean:</span></span><br><span class="line">rm -f <span class="variable">$(</span>EXEC)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>写好makefile文件后，即可编译工程。在终端中输入make命令，回车后将显示如下信息：<br>g++ -c hello.cpp -o hello.o<br>g++ -g hello.o main.cpp -I. -o main<br>rm -f hello.o<br>&lt;&lt;&lt;&lt;&lt;&lt; main is created successfully! &gt;&gt;&gt;&gt;&gt;&gt;<br>同样，你也可以不使用makefile文件，而直接在终端上输入以下两行命令,也可以编译这个工程。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">g++ -c hello<span class="selector-class">.cpp</span> -o hello<span class="selector-class">.o</span></span><br><span class="line">g++ -g hello<span class="selector-class">.o</span> main<span class="selector-class">.cpp</span> -I. -o main</span><br></pre></td></tr></table></figure>
+<p> 简单的编译链接成一个单一的可执行程序：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ hello<span class="selector-class">.cpp</span> main<span class="selector-class">.cpp</span> -o hello</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用ls -l命令查看当前目录下的所有文件，确实有一个main文件。<br>在终端中输入./main，即可运行程序。</p>
+</li>
+<li>【附录】C++中的一些文件后缀</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>后缀</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.C</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.c</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.cc</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.cp</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.cpp</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.cxx</td>
+<td>C++源代码（需要编译预处理）</td>
+</tr>
+<tr>
+<td>.h</td>
+<td>C或者C++源代码文件</td>
+</tr>
+<tr>
+<td>.ii</td>
+<td>C++源代码(不需要编译预处理)</td>
+</tr>
+<tr>
+<td>.o</td>
+<td>对象文件</td>
+</tr>
+<tr>
+<td>.s</td>
+<td>汇编语言代码</td>
+</tr>
+<tr>
+<td>.so</td>
+<td>动态库</td>
+</tr>
+<tr>
+<td>none</td>
+<td>标准C++系统头文件</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/12/08/无线漫游网络/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          无线漫游网络【delete】
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/11/22/NS2的相关学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">NS2的相关学习</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Miracl函数库" data-title="Miracl函数库&amp;Ubuntu下创建C++项目" data-url="http://yoursite.com/2015/11/22/Miracl函数库/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 夏鲁鲁
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: true
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
